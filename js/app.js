@@ -250,5 +250,11 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-   
+/*
+Need to add on:
+    -gems
+    -scoring for gems
+    -include score into gameOver modal
+    -possibly additonal character choice
+*/    
 
