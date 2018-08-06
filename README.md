@@ -25,10 +25,10 @@ JavaScript for Kids by Nick Morgan\
 RyanB walkthrough video:\
 https://www.youtube.com/watch?v=JcQYGbg0IkQ&t=5s
 * For modal: sweetalert2\
-https://sweetalert2.github.io/ 
+https://sweetalert2.github.io
 https://sweetalert.js.org/ \
 * For collision detection, referred to:\
-https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
+https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection \
 https://stackoverflow.com/questions/2440377/javascript-collision-detection
 * Other resources referred to:\
 http://tiny.cc/ArcadeGameCloneProject
