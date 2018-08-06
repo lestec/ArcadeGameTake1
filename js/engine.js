@@ -23,7 +23,7 @@ var Engine = (function(global) {
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         lastTime;
-        //adding to try to stop game after win
+        //adding to stop game after win
         var id;
 
     canvas.width = 505;
@@ -57,13 +57,11 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
-//hope this is the right place, so confused. trying to get gm to stop
-//after player wins
-        //setting up if statement to get game to stop after win
- /* Special thanks to Matthew Cranford for helping me get over the 
- 'How do I stop the animations' problem I had.
- // https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/
- */         
+
+        /* setting up if statement to get game to stop after win
+         * To help figure out how to stop animations help from:
+         * https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/
+         */         
         if (player.winGame === true) {
             console.log('gameover');
             win.cancelAnimationFrame(id);
@@ -72,12 +70,6 @@ var Engine = (function(global) {
             id = win.requestAnimationFrame(main);
         }
     }    
-
-    
-    /*  Tying to get to stop  
-        win.requestAnimationFrame(main);
-
-    }*/
 
     /* This function does some initial setup that should only occur once,
      * particularly setting the lastTime variable that is required for the
@@ -99,7 +91,7 @@ var Engine = (function(global) {
      * on the entities themselves within your app.js file).
      */
 
-     //REMEMBER UNCOMMENT CHECKCOLLISON!!! TO TEST 
+     
     function update(dt) {
         updateEntities(dt);
         // checkCollisions();
@@ -113,8 +105,6 @@ var Engine = (function(global) {
      * render methods.
      */
 
-//have to comment out to get board to show!!!
-//DON"T FORGET -- take out to test bug move
     function updateEntities(dt) {
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
@@ -176,7 +166,6 @@ var Engine = (function(global) {
          * the render function you have defined.
          */
          
-/*COMMENT OUT TO GET BOARD AND PLAYER TO Wk, now test ememy*/
          
         allEnemies.forEach(function(enemy) {
             enemy.render();
