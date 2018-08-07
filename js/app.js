@@ -1,13 +1,13 @@
 /*
-Referred to:
-http://tiny.cc/ArcadeGameCloneProject
-JavaScript for Kids by Nick Morgan
-RyanB walkthrough video:
-https://www.youtube.com/watch?v=JcQYGbg0IkQ&t=5s
-For modal: sweetalert2
-https://sweetalert2.github.io/
-https://sweetalert.js.org/
-*/
+ *Referred to:
+ *http://tiny.cc/ArcadeGameCloneProject
+ *JavaScript for Kids by Nick Morgan
+ *RyanB walkthrough video:
+ *https://www.youtube.com/watch?v=JcQYGbg0IkQ&t=5s
+ *For modal: sweetalert2
+ *https://sweetalert2.github.io/
+ *https://sweetalert.js.org/
+ */
 
 // Enemies our player must avoid
 //add in x,y to position enemy in diff spots
