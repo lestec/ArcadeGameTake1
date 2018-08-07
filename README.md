@@ -2,7 +2,7 @@
 
 This game was built as a [Udacity](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) Front End Nano Degree project. The purpose is to demostrate mastery of JavaScript Object Oriented
 Programming.
-
+The project is to recreate the classic arcade game Frogger. 
 
 ## How to play:
 
@@ -26,7 +26,7 @@ RyanB walkthrough video:\
 https://www.youtube.com/watch?v=JcQYGbg0IkQ&t=5s
 * For modal: sweetalert2\
 https://sweetalert2.github.io
-https://sweetalert.js.org/ \
+https://sweetalert.js.org/ 
 * For collision detection, referred to:\
 https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection \
 https://stackoverflow.com/questions/2440377/javascript-collision-detection
