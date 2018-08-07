@@ -36,11 +36,11 @@ Enemy.prototype.update = function(dt) {
     if(this.x < 502) {
         //move 
         //mult the speed by the dt parameter on the x axis 
-        //speed = increment x by speed * dt
+        //increment x by speed * dt
         this.x += this.speed * dt;
     }
         else {
-            //Reset back to start, but need to 'walk' on 
+            //Reset back to start, need to 'walk' on 
             this.x = -101;
         }
 
@@ -67,10 +67,10 @@ class Player {
 //startY places player 5 blocks down from top row/top left 0,0    
 //this.startY = (this.vert * 5) - 35; **NEED TO CHANGE TO GET to collide
         this.startY = (this.vert * 4) + 58;
-//set bk to bottom middle with above calc -- use for reset
+//sets player back to bottom middle with above calc -- use for reset
         this.x = this.startX;
         this.y = this.startY;
-//setting winGame to get game to stop moving when game over
+//setting winGame to get game animations to stop moving when game over
         this.winGame = false;
  }
 
@@ -85,9 +85,9 @@ class Player {
         }
     }
 
-//modified and help from:
-//https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection  
-//https://stackoverflow.com/questions/2440377/javascript-collision-detection
+    //modified and help from:
+    //https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection  
+    //https://stackoverflow.com/questions/2440377/javascript-collision-detection
     checkCollision() {
         //check for collisions with enemies
         for (var i = 0; i < allEnemies.length; i++) {
@@ -103,7 +103,7 @@ class Player {
         this.x = this.startX;
         this.y = this.startY;
     }
-//render: renders the image of the user..Following enemies 
+    //render: renders the image of the user..Following enemies 
     render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
@@ -119,30 +119,28 @@ class Player {
     switch(input) {
         case 'left':
 /*
-this.x -= 20; adding (-) makes it go left, without it,
-it does not move correctly, it jumps to the top
-  (+) sign has it going to the right
-Vise Versa if - is on down, it will go up 
-*/
-//adding if statement for boundary so will not go off pg
-            if (this.x > 0) {
+ *this.x -= 101; adding (-) makes it go left, without it,
+ *it does not move correctly, it jumps to the top
+ *(+) sign has it going to the right
+ *Vise Versa if - is on down, it will go up 
+ */
+
+ //adding if statement for boundary so will not go off pg
+        if (this.x > 0) {
             this.x -= 101;
         }
             break;
         case 'up':
-            //this.y -= 20;
             if (this.y > 0) {
             this.y -= 83;
         }
             break;
         case 'right':
-            //this.x += 20;
             if (this.x < 305) {
             this.x += 101;
         }
             break;
         case 'down':
-            //this.y += 20;
             if (this.y < 306)
             this.y += 83;
             break;
@@ -163,7 +161,7 @@ const player = new Player();
 const bug1 = new Enemy(-101, 0, 150);
 const bug2 = new Enemy(-101, 75, 125);
 const bug3 = new Enemy(-101, 170, 200);
-//const bug4 = new Enemy(-101, 125, 100);//made browser crash so too out for now
+//const bug4 = new Enemy(-101, 125, 100);//made browser crash so took out for now
 const allEnemies = [];
 //to push bugs into array -- took out bug4 for now
 allEnemies.push(bug1,bug2,bug3);
@@ -195,10 +193,10 @@ document.addEventListener('keyup', function(e) {
 });
 
 /*
-Need to add on:
-    -gems
-    -scoring for gems
-    -include score into gameOver modal
-    -possibly additonal character choice
-*/    
+Need to add on: 
+ *  -gems
+ *  -scoring for gems
+ *  -include score into gameOver modal
+ *  -possibly additonal character choice
+ */    
 
