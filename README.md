@@ -1,6 +1,6 @@
 # Udacity Frontend Nanodegree Arcade Game
 
-This game was built as a [Udacity](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) Front End Nano Degree project. The purpose is to demostrate mastery of JavaScript Object Oriented
+This game was built as a [Udacity](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) Front End Nano Degree project. The purpose is to demonstrate mastery of JavaScript Object Oriented
 Programming.
 The project is to recreate the classic arcade game Frogger. 
 
